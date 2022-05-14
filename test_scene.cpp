@@ -7,9 +7,14 @@
 int main() {
     // Download SFML: https://www.sfml-dev.org/download.php
 
-    sf::RenderWindow window(sf::VideoMode(1280, 720), "Паша сосать!");
-    sf::CircleShape shape(100.f);
+    sf::RenderWindow window(sf::VideoMode(2160, 1440), "TEST!");
+    sf::CircleShape shape(500.f);
     shape.setFillColor(sf::Color::Green);
+    sf::RectangleShape rectangle;
+    rectangle.setSize(sf::Vector2f(500, 500));
+    rectangle.setOutlineColor(sf::Color::Red);
+    rectangle.setOutlineThickness(20);
+    rectangle.setPosition(1000, 500);
 
     while (window.isOpen())
     {
@@ -21,7 +26,7 @@ int main() {
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(rectangle);
         window.display();
     }
 

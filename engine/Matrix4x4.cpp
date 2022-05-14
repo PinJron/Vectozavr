@@ -90,8 +90,8 @@ Matrix4x4 Matrix4x4::RotationX(double rx) {
 
     Rx._arr[1][1] = c;
     Rx._arr[2][2] = c;
-    Rx._arr[2][3] = -s;
-    Rx._arr[3][2] = s;
+    Rx._arr[1][2] = -s;
+    Rx._arr[2][1] = s;
 
     Rx._arr[3][3] = 1.0;
     return Rx;

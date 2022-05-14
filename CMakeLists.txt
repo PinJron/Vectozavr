@@ -7,7 +7,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 
 add_executable(${CMAKE_PROJECT_NAME}
         # custom files:
-        test_scene.cpp
+        lesson1.cpp
         # 3d engine:
         engine/Consts.h
         engine/Vec4D.h
@@ -94,7 +94,7 @@ add_executable(${CMAKE_PROJECT_NAME}
 if(APPLE OR UNIX)
     include_directories(/usr/local/include)
 else()
-    set(SFML_DIR "C:/Libraries/SFML/lib/cmake/SFML")
+    set(SFML_DIR "D:/Libraries/SFML/lib/cmake/SFML")
     set(SFML_STATIC_LIBRARIES TRUE)
 endif()
 
